@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 100%;
+}
+
+img {
+  width: 40%;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+}
+
+.texts {
+  width: 100%;
+  display: block;
+  padding: 5px;
+}
+
+.texts ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: blue;
+}
+.texts a {
+  color: blue; /* Set link color to blue */
+  text-decoration: none; /* Remove underline */
+}
+
+.texts li {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.texts a:hover {
+  text-decoration: underline;
+}
+
+.wrapper {
+  margin: 0;
+  padding: px;
+  margin-bottom: -50px;
+}
+
+.container {
+  width: 100%;
+  padding: 10px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+footer {
+  display: block;
+  color: #9c2d35;
+  text-align: center;
+}
+
+/* responsive  */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    
+    header {
+        flex-direction: column;
+    }
+    
+    .search-section input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .search-section button {
+        width: 100%;
+    }
+}

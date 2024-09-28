@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ministry of Interior</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- header logo -->
+    <div id="container">
+      <a href="https://www.interior.gov.pk/">
+        <img
+          src="https://blogger.googleusercontent.com/img/a/AVvXsEjeLDf3yxVLjW7WHqi3_Wt9GrXJASyoN7-HTHoQuANibVcU4MrPIS4sRFr62laMKzuQ38fH_rpR53iTZ2KAFQ20Z4hTaOuZz9e-s_FlqWEzQABCBuokjt-vmlnqeT_hUC9cgr5_oY7LjZrSwfsNJzK_o1BKvThTVRhYiKF4RSf7l58F-o-Bdq09tW8P=s456"
+          alt="Logo"
+        /></a>
+    </div>
+
+    <!-- text header -->
+    <div class="texts">
+      <a href="https://interior.gov.pk" target="_blank"></a>
+      <ul>
+        <li>
+          <a href="https://permitinterior.gov-pk.com/">Permit Paper &nbsp; Verification</a>
+        </li>
+        <li>
+          <a href="https://licenseinterior.gov-pk.com/">License Verification</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- search card -->
+    <div class="wrapper" id="search-wrapper">
+      <div class="container">
+        <div class="card" id="search-card">
+          <h4 class="card-header text-center">Search CNIC Number</h4>
+          <div class="card-body">
+            <form id="cnicForm">
+              <div class="row">
+                <div class="col-md-8">
+                  <input
+                    type="text"
+                    id="cnic-input"
+                    class="form-control"
+                    placeholder="Enter CNIC 35102-088460-9"
+                    required
+                  />
+                </div>
+                <div class="col-md-4">
+                  <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CNIC Details -->
+    <div class="container" id="cnic-details" style="display: none;">
+      <div class="card">
+        <h4 class="card-header text-center">CNIC Details</h4>
+        <div class="card-body" id="details-content"></div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <p>Copyright&nbsp;@2023&nbsp;Ministry of Interior Pakistan</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
